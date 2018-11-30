@@ -20,6 +20,6 @@ alias dcritP='docker run -it -P'
 alias dcritPn='docker run -it -P --name'
 alias dcrm='docker rm'
 alias dcrmi='docker rmi'
-alias dcs='docker start'
+alias dcst='docker start'
 alias dcsp='docker stop'
 
