@@ -131,5 +131,8 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+. ~/z/z.sh
+
 exec zsh
 source .zshrc
