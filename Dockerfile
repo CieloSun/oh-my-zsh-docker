@@ -12,4 +12,6 @@ RUN wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -
 WORKDIR /root
 RUN git clone --depth 1 https://github.com/rupa/z.git
 # change bashrc
-COPY .bashrc /root/.bashrc
+RUN echo -e "exec zsh\nsource /root/.zshrc">>/root/.bashrc
+# config z
+RUN echo -e ". /root/z/z.sh">>/root/.zshrc
